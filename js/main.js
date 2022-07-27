@@ -210,11 +210,9 @@
     var clSlickSlider = function() {
         $('.recentWorks__slider-container').slick({
             arrows:false,
-            dots: false,
             slidesToShow: 2,
             infinite: true,
             speed: 500,
-            cssEase: 'linear'
           });
 
         $('.clients__slider').slick({
