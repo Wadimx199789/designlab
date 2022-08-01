@@ -283,17 +283,32 @@
         });
 
         // ---------------------------------------------------------------------------
-        $('#services__slider').on('init reInit', function (event, slick) {
+        $('#services__slider--first').on('init reInit', function (event, slick) {
             var amount = slick.slideCount;
-            $('#services__range').attr('max', amount);
+            $('#services__range--first').attr('max', amount);
         })
 
-        $('#services__slider').on('afterChange', function (e, slick, currentSlide) {
+        $('#services__slider--first').on('afterChange', function (e, slick, currentSlide) {
+            $('#services__range--first').val(currentSlide + 1);
+        })
+
+        $('#services__range--first').on('input change', function () {
+            $('#services__slider--first').slick('slickGoTo', this.value - 1);
+        });
+
+
+
+        $('#services__slider--second').on('init reInit', function (event, slick) {
+            var amount = slick.slideCount;
+            $('#services__range--second').attr('max', amount);
+        })
+
+        $('#services__slider--second').on('afterChange', function (e, slick, currentSlide) {
             $('#services__range').val(currentSlide + 1);
         })
 
-        $('#services__range').on('input change', function () {
-            $('#services__slider').slick('slickGoTo', this.value - 1);
+        $('#services__range--second').on('input change', function () {
+            $('#services__slider--second').slick('slickGoTo', this.value - 1);
         });
     }
     //     $('.testimonials').slick({

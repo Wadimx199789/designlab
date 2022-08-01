@@ -400,13 +400,14 @@ body {
             margin-bottom: 44px;
             padding-bottom: 5px;
             position: relative;
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: "";
                 width: 100%;
                 height: 1px;
-                bottom:0;
-                left:0;
+                bottom: 0;
+                left: 0;
                 background-color: #C9C8C8;
 
             }
@@ -459,11 +460,13 @@ body {
         }
     }
 }
-@media screen and (max-width:394px){
-    .lab__content{
-        h2{
+
+@media screen and (max-width:394px) {
+    .lab__content {
+        h2 {
             display: inline-block;
-            &:after{
+
+            &:after {
                 transform: translateX(-50%);
                 width: 50%;
                 left: 50%;
@@ -471,6 +474,7 @@ body {
         }
     }
 }
+
 @media screen and (max-width:1441px) {
     .lab {
         padding-top: 68px;
@@ -485,7 +489,7 @@ body {
                 line-height: 49px;
                 letter-spacing: 1px;
                 margin-bottom: 35px;
-                
+
             }
 
         }
@@ -611,11 +615,31 @@ body {
 
 // ------------------------services----------------------//
 .services {
+    &--second{
+        display: none;
+    }
     padding-top: 120px;
     padding-bottom: 22px;
-
+    .slick-track{
+        padding-top: 10px;
+    }
     &__slider {
         margin-bottom: 49px;
+    }
+
+    &__slide-row {
+        margin: 0 auto;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 68px;
+        }
+    }
+
+    &__slide-title {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
     }
 
     &__slide-item {
@@ -657,7 +681,9 @@ body {
     }
 
     .price {
-        display: inline-block;
+        height: 25px;
+        vertical-align:middle;
+        text-align: center;
         font-family: 'Fira Sans';
         font-style: normal;
         font-weight: 400;
@@ -759,6 +785,12 @@ body {
         padding-top: 93px;
         padding-bottom: 11px;
 
+        &__slide-row {
+            &:not(:last-child) {
+                margin-bottom: 52px;
+            }
+        }
+
         &__slider {
             margin-bottom: 56px;
         }
@@ -819,12 +851,18 @@ body {
         padding-top: 43px;
         padding-bottom: 8px;
 
+        &__slide-row {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
         &__slider {
             margin-bottom: 15px;
         }
 
         &__slide-item {
             h4 {
+                max-width: 138px;
                 font-size: 20px;
                 line-height: 24px;
             }
@@ -871,21 +909,43 @@ body {
 
             ;
         }
+        .services__slide-title--reclamniyText,
+        .services__slide-title--site,
+        .services__slide-title--reclama{
+            column-gap: 0px;
+            .price{
+                align-self: flex-start;
+            }
+    
+        }
 
     }
+   
 
 }
 
 @media screen and (max-width:769px) {
     .services {
+        &--first{
+            display: none;
+        }
+        &--second{
+            display: block;
+        }
         padding-top: 50px;
         padding-bottom: 15px;
-
+        &__slide-img{
+            margin-bottom: 12px;
+        }
         &__slider {
             margin-bottom: 50px;
         }
-
+        &__slide-title{
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
         &__slide-item {
+            text-align: center;
             align-items: center;
             flex-direction: column;
 
@@ -899,12 +959,12 @@ body {
             }
         }
 
-        .price {
-            display: block;
-            font-size: 13px;
-            padding-left: 9px;
-            padding-right: 9px;
-        }
+        // .price {
+        //     display: block;
+        //     font-size: 13px;
+        //     padding-left: 9px;
+        //     padding-right: 9px;
+        // }
 
         &__slide {
             &-item:not(:last-child) {
@@ -920,7 +980,15 @@ body {
             width: 172px;
             margin-bottom: 20px;
         }
-
+        .services__slide-title--reclamniyText,
+        .services__slide-title--site,
+        .services__slide-title--reclama{
+            column-gap: 0px;
+            .price{
+                align-self: center;
+            }
+    
+        }
 
     }
 }
@@ -1265,11 +1333,12 @@ body {
         padding-bottom: 2px;
         margin-bottom: 63px;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             width: 100%;
-            bottom:0;
+            bottom: 0;
             left: 0;
             height: 1px;
             background-color: #700DC0;
@@ -1340,7 +1409,8 @@ body {
             line-height: 49px;
             letter-spacing: 1px;
             margin-bottom: 47px;
-            &::after{
+
+            &::after {
                 width: 60%;
             }
         }
@@ -1680,11 +1750,12 @@ body {
         position: relative;
         margin-bottom: 37px;
         padding-bottom: 2px;
-        &::after{
+
+        &::after {
             position: absolute;
-            content:"";
+            content: "";
             bottom: 0;
-            left:0;
+            left: 0;
             height: 1px;
             width: 64%;
             background-color: #700DC0;
@@ -1725,8 +1796,9 @@ body {
         color: #FFFFFF;
         text-decoration: underline;
         transition: .5s;
-        &:hover{
-            color:#700DC0;
+
+        &:hover {
+            color: #700DC0;
         }
     }
 
@@ -1779,19 +1851,22 @@ body {
 
 @media screen and (max-width:1441px) {
     .recentWorks {
-        &__slide{
+        &__slide {
             width: 510px;
         }
+
         &__container {
             padding-top: 122px;
             padding-bottom: 107px;
 
 
         }
-        &__information{
+
+        &__information {
             padding-top: 54px;
             padding-left: 32px;
         }
+
         &__title {
             font-size: 48px;
             line-height: 59px;
@@ -1815,7 +1890,8 @@ body {
             line-height: 137.8%;
             letter-spacing: 1px;
         }
-        input[type="range"]{
+
+        input[type="range"] {
             width: 510px;
         }
     }
@@ -1823,18 +1899,22 @@ body {
 
 @media screen and (max-width:1025px) {
     .recentWorks {
-        input[type="range"]{
+        input[type="range"] {
             width: 420px;
         }
-        &__inner{
+
+        &__inner {
             column-gap: 30px;
         }
-        &__slide{
+
+        &__slide {
             width: 420px;
         }
-        &__information{
+
+        &__information {
             padding-top: 20px;
         }
+
         &__container {
             padding-top: 90px;
             padding-bottom: 82px;
@@ -1873,21 +1953,26 @@ body {
 
 @media screen and (max-width:769px) {
     .recentWorks {
-        input[type="range"]{
+        input[type="range"] {
             width: 307px;
         }
-        &__inner{
+
+        &__inner {
             column-gap: 0px;
         }
-        &__slide{
+
+        &__slide {
             width: 307px;
         }
-        &__information{
+
+        &__information {
             padding-top: 0px;
         }
-        &__slider{
+
+        &__slider {
             padding-top: 50px;
         }
+
         &__container {
             padding-top: 70px;
             padding-bottom: 54px;
@@ -1926,16 +2011,19 @@ body {
 
 @media screen and (max-width:577px) {
     .recentWorks {
-        input[type="range"]{
+        input[type="range"] {
             width: 307px;
         }
-        &__inner{
+
+        &__inner {
             flex-wrap: wrap;
         }
-        &__slider{
+
+        &__slider {
             padding-left: 35px;
         }
-        &__slide{
+
+        &__slide {
             width: 290px;
         }
 
@@ -1950,7 +2038,8 @@ body {
             font-size: 36px;
             line-height: 44px;
             letter-spacing: 1px;
-            &::after{
+
+            &::after {
                 width: 39%;
             }
 

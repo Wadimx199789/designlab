@@ -550,8 +550,36 @@ body {
   padding-bottom: 22px;
 }
 
+.services--second {
+  display: none;
+}
+
+.services .slick-track {
+  padding-top: 10px;
+}
+
 .services__slider {
   margin-bottom: 49px;
+}
+
+.services__slide-row {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.services__slide-row:not(:last-child) {
+  margin-bottom: 68px;
+}
+
+.services__slide-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
 }
 
 .services__slide-item {
@@ -593,7 +621,9 @@ body {
 }
 
 .services .price {
-  display: inline-block;
+  height: 25px;
+  vertical-align: middle;
+  text-align: center;
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
@@ -702,6 +732,9 @@ body {
     padding-top: 93px;
     padding-bottom: 11px;
   }
+  .services__slide-row:not(:last-child) {
+    margin-bottom: 52px;
+  }
   .services__slider {
     margin-bottom: 56px;
   }
@@ -749,10 +782,14 @@ body {
     padding-top: 43px;
     padding-bottom: 8px;
   }
+  .services__slide-row:not(:last-child) {
+    margin-bottom: 35px;
+  }
   .services__slider {
     margin-bottom: 15px;
   }
   .services__slide-item h4 {
+    max-width: 138px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -790,6 +827,18 @@ body {
     font-size: 24px;
     line-height: 29px;
   }
+  .services .services__slide-title--reclamniyText,
+  .services .services__slide-title--site,
+  .services .services__slide-title--reclama {
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .services .services__slide-title--reclamniyText .price,
+  .services .services__slide-title--site .price,
+  .services .services__slide-title--reclama .price {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -797,10 +846,27 @@ body {
     padding-top: 50px;
     padding-bottom: 15px;
   }
+  .services--first {
+    display: none;
+  }
+  .services--second {
+    display: block;
+  }
+  .services__slide-img {
+    margin-bottom: 12px;
+  }
   .services__slider {
     margin-bottom: 50px;
   }
+  .services__slide-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 8px;
+  }
   .services__slide-item {
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -816,12 +882,6 @@ body {
   .services__slide-item p {
     font-size: 14px;
   }
-  .services .price {
-    display: block;
-    font-size: 13px;
-    padding-left: 9px;
-    padding-right: 9px;
-  }
   .services__slide-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -831,6 +891,19 @@ body {
   .services input[type="range"] {
     width: 172px;
     margin-bottom: 20px;
+  }
+  .services .services__slide-title--reclamniyText,
+  .services .services__slide-title--site,
+  .services .services__slide-title--reclama {
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .services .services__slide-title--reclamniyText .price,
+  .services .services__slide-title--site .price,
+  .services .services__slide-title--reclama .price {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
