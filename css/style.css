@@ -337,7 +337,7 @@ body {
   }
   .header__burger {
     width: 37px;
-    height: 13px;
+    height: 16px;
   }
   .header__call {
     display: none;
@@ -800,6 +800,10 @@ body {
   line-height: 37px;
   color: #700DC0;
   margin-right: 15px;
+}
+
+.services__slide-content p {
+  max-width: 380px;
 }
 
 @media screen and (max-width: 1441px) {
@@ -1687,7 +1691,7 @@ body {
 .recentWorks__container {
   padding-top: 141px;
   padding-bottom: 114px;
-  padding-left: calc((100% - 1140px)/2 + 15px);
+  padding-left: calc((100% - 1140px)/2);
   background-color: #161515;
 }
 
