@@ -211,21 +211,29 @@
 
         $('.recentWorks__slider-container').slick({
             arrows: false,
+            swipeToSlide:true,
+            swipe:true,
             slidesToShow: 2,
             variableWidth: true,
             infinite: true,
+            touchMove:true,
             speed: 500,
         });
         $('.services__slider').slick({
             arrows: false,
+            swipeToSlide:true,
+            swipe:true,
             slidesToShow: 1,
             slidesToScroll:1,
             infinite: true,
+            touchMove:true,
             speed: 500,
         });
 
         $('.clients__slider').slick({
-
+            swipe:true,
+            swipeToSlide:true,
+            touchMove:true,
             arrows: false,
             dots: true,
             infinite: true,
