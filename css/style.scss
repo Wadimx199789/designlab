@@ -115,7 +115,13 @@ body {
 .header__call {
     cursor: pointer;
 }
-
+.header__burger{
+    opacity: 1;
+    transition: .5s;
+}
+.header__burger.active{
+    opacity: 0;
+}
 .header__nav-socials--inst {
     margin-bottom: 24px;
 }

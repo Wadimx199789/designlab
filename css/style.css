@@ -19,10 +19,6 @@ body {
   height: 100%;
 }
 
-.header__top {
-  position: relative;
-}
-
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -110,6 +106,16 @@ body {
 
 .header__call {
   cursor: pointer;
+}
+
+.header__burger {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header__burger.active {
+  opacity: 0;
 }
 
 .header__nav-socials--inst {

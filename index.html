@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__top">
             <div class="header__top-container">
                 <div class="logo">
@@ -24,12 +24,12 @@
                     <a href="tel:+375339905008" class="header__call">
                         <img src="./assets/header/call.svg" alt="call">
                     </a>
-                    <div class="header__burger">
+                    <a href="#header" class="header__burger">
                         <span></span>
-                    </div>
+                    </a>
                     <nav class="header__nav">
                         <div class="header__nav-close"><img src="./assets/header/closeBtn.png" alt="close"></div>
-                        <ul class="header__nav-list" data-aos=fade-left>
+                        <ul class="header__nav-list">
                             <li class="header__nav-item">
                                 <a href="#services" class="header__nav-link">услуги</a>
                             </li>
@@ -948,7 +948,6 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/burger.js"></script>
 </body>
 
 
