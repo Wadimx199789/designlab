@@ -318,6 +318,9 @@ body {
 }
 
 @media screen and (max-width:1025px) {
+    .header__top-container.active{
+        z-index: 1000 !important;
+    }
     .header__top-container {
         padding-right: 24px;
         padding-left: 24px;
