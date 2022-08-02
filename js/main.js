@@ -210,6 +210,7 @@
     var clSlickSlider = function () {
 
         $('.recentWorks__slider-container').slick({
+            touchThreshold: 50,
             arrows: false,
             swipeToSlide:true,
             swipe:true,
@@ -220,6 +221,7 @@
             speed: 500,
         });
         $('.services__slider').slick({
+            touchThreshold: 50,
             arrows: false,
             swipeToSlide:true,
             swipe:true,
@@ -231,6 +233,7 @@
         });
 
         $('.clients__slider').slick({
+            touchThreshold: 50,
             swipe:true,
             swipeToSlide:true,
             touchMove:true,
