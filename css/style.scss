@@ -262,6 +262,7 @@ body {
 }
 
 .header__top-container.active {
+    z-index: 1000;
     background: #000000;
     opacity: .9;
     padding-top: 10px;
