@@ -208,6 +208,7 @@
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function () {
+
         $('.recentWorks__slider-container').slick({
             arrows: false,
             slidesToShow: 2,
@@ -282,6 +283,15 @@
             $('#recentWorks').slick('slickGoTo', this.value - 1);
         });
 
+
+
+        $('#recentWorks').on('afterChange', function (e, slick, currentSlide) {
+
+            var slide = slick.$slides[currentSlide];
+            $(".recentWorks__subtitle").text($(slide).data("name"));
+            $(".recentWorks__text").text($(slide).data("category"));
+        });
+
         // ---------------------------------------------------------------------------
         $('#services__slider--first').on('init reInit', function (event, slick) {
             var amount = slick.slideCount;
@@ -343,6 +353,14 @@
     /* Smooth Scrolling
      * ------------------------------------------------------ */
     var clSmoothScroll = function () {
+
+        $(".smoothscroll").on("click", function(e){
+            e.preventDefault();
+            var anchor = $(this).attr('href');
+            $('html, body').stop().animate({
+                scrollTop: $(anchor).offset().top - 60
+            }, 800);
+        });
 
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
@@ -520,13 +538,13 @@
         clStatCount();
         clMasonryFolio();
         clSlickSlider();
-        clSmoothScroll();
+        // clSmoothScroll();
         clPlaceholder();
         clAlertBoxes();
         clContactForm();
         clAOS();
         clAjaxChimp();
-        clBackToTop();
+        // clBackToTop();
 
     })();
 
