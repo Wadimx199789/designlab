@@ -19,6 +19,10 @@ body {
   height: 100%;
 }
 
+.header__top {
+  position: relative;
+}
+
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -972,7 +976,6 @@ body {
 }
 
 .header {
-  position: relative;
   overflow: hidden;
   background-color: #000000;
   height: 850px;
