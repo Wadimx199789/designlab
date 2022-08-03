@@ -739,6 +739,7 @@ body {
 }
 
 .services__slide-item p {
+  max-width: 380px;
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
@@ -892,6 +893,7 @@ body {
     line-height: 29px;
   }
   .services__slide-item p {
+    max-width: 320px;
     font-size: 16px;
     line-height: 137.8%;
     letter-spacing: 0.5px;
@@ -947,6 +949,7 @@ body {
     line-height: 24px;
   }
   .services__slide-item p {
+    max-width: 260px;
     font-size: 16px;
     line-height: 137.8%;
   }
@@ -1033,6 +1036,7 @@ body {
     line-height: 22px;
   }
   .services__slide-item p {
+    max-width: 240px;
     font-size: 14px;
   }
   .services__slide-item:not(:last-child) {
@@ -1061,6 +1065,11 @@ body {
 }
 
 @media screen and (max-width: 577px) {
+  .services .stock {
+    font-size: 14px;
+    line-height: 137.8%;
+    letter-spacing: 1px;
+  }
   .services--first {
     display: none;
   }

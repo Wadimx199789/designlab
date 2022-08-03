@@ -26,19 +26,22 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
-@media screen and (max-width:577px){
-    .container{
-        padding:0 20px;
+
+@media screen and (max-width:577px) {
+    .container {
+        padding: 0 20px;
     }
 }
-@media screen and (max-width:1025px){
-    .container{
-        padding:0 24px;
+
+@media screen and (max-width:1025px) {
+    .container {
+        padding: 0 24px;
     }
 }
-@media screen and (max-width:769px){
-    .container{
-        padding:0 18px;
+
+@media screen and (max-width:769px) {
+    .container {
+        padding: 0 18px;
     }
 }
 
@@ -132,7 +135,7 @@ body {
 }
 
 .header__burger {
-    padding-top:2px;
+    padding-top: 2px;
     opacity: 1;
     transition: .5s;
 }
@@ -343,12 +346,13 @@ body {
 }
 
 @media screen and (max-width:1025px) {
-    .header{
-        .logo{
-            width:60px;
+    .header {
+        .logo {
+            width: 60px;
             height: 60px;
         }
     }
+
     .header__top-container {
         padding-right: 24px;
         padding-left: 24px;
@@ -590,9 +594,10 @@ body {
                 line-height: 49px;
                 letter-spacing: 1px;
                 margin-bottom: 35px;
-                &::after{
+
+                &::after {
                     width: 90%;
-                    left:5%;
+                    left: 5%;
                 }
 
             }
@@ -625,6 +630,7 @@ body {
         width: 90%;
         left: 5%;
     }
+
     .lab {
         padding-top: 78px;
         padding-bottom: 56px;
@@ -673,6 +679,7 @@ body {
         width: 76%;
         left: 12%;
     }
+
     .lab {
         padding-top: 58px;
         padding-bottom: 31px;
@@ -726,35 +733,42 @@ body {
     .lab__bottom-item {
         width: 50% !important;
     }
-    .lab__bottom-item:nth-child(2n){
+
+    .lab__bottom-item:nth-child(2n) {
         padding-left: 24px;
     }
-    .lab__bottom-item:nth-child(2n+1){
+
+    .lab__bottom-item:nth-child(2n+1) {
         padding-right: 24px;
     }
 }
-@media  screen and (max-width:512px) {
+
+@media screen and (max-width:512px) {
     .lab__content h2::after {
         width: 82%;
         left: 9%;
     }
-    
+
 }
-@media screen and (max-width:460px){
+
+@media screen and (max-width:460px) {
     .lab__content h2::after {
         width: 88%;
         left: 6%;
     }
 }
-@media screen and (max-width:400px){
-    .lab__content{
-        max-width:288px;
+
+@media screen and (max-width:400px) {
+    .lab__content {
+        max-width: 288px;
     }
+
     .lab__content h2::after {
         width: 52%;
         left: 50%;
     }
 }
+
 // ------------------------services----------------------//
 .services {
     &--second {
@@ -801,6 +815,7 @@ body {
         }
 
         p {
+            max-width: 380px;
             font-family: 'Fira Sans';
             font-style: normal;
             font-weight: 300;
@@ -924,16 +939,18 @@ body {
         ;
     }
 }
-.services__slide-content p{
+
+.services__slide-content p {
     max-width: 380px;
 }
 
 @media screen and (max-width:1441px) {
     .services {
-        .container{
+        .container {
             padding-left: 47px;
             padding-right: 65px;
         }
+
         padding-top: 93px;
         padding-bottom: 11px;
 
@@ -954,6 +971,7 @@ body {
             }
 
             p {
+                max-width: 320px;
                 font-size: 16px;
                 line-height: 137.8%;
                 letter-spacing: 0.5px;
@@ -1002,10 +1020,12 @@ body {
     .services {
         padding-top: 43px;
         padding-bottom: 8px;
-        .container{
-            padding-left:39px;
+
+        .container {
+            padding-left: 39px;
             padding-right: 19;
         }
+
         &__slide-row {
             &:not(:last-child) {
                 margin-bottom: 35px;
@@ -1023,7 +1043,7 @@ body {
                 line-height: 24px;
             }
 
-            p {
+            p { max-width: 260px;
                 font-size: 16px;
                 line-height: 137.8%;
             }
@@ -1084,13 +1104,14 @@ body {
 
 @media screen and (max-width:769px) {
     .services {
-        padding-top:50px;
-        padding-bottom:15px;
-        .container{
-            padding-left:33px;
-            padding-right:33px;
+        padding-top: 50px;
+        padding-bottom: 15px;
+
+        .container {
+            padding-left: 33px;
+            padding-right: 33px;
         }
-      
+
 
         padding-top: 50px;
         padding-bottom: 15px;
@@ -1119,6 +1140,7 @@ body {
             }
 
             p {
+                max-width: 240px;
                 font-size: 14px;
             }
         }
@@ -1158,23 +1180,34 @@ body {
 
     }
 }
-@media screen and (max-width:577px){
-    .services{
+
+@media screen and (max-width:577px) {
+   
+
+    .services {
+        .stock {
+            font-size: 14px;
+            line-height: 137.8%;
+            letter-spacing: 1px;
+    
+        }
         &--first {
             display: none;
         }
-    
+
         &--second {
             display: block;
         }
+
         &__slide-item {
-            p{
+            p {
                 max-width: 290px;
             }
         }
     }
 
 }
+
 // ------------------header---------------------------//
 .header {
     overflow: hidden;
@@ -1260,7 +1293,7 @@ body {
     .header {
         height: 580px;
 
-       
+
 
         &__title {
             max-width: 156px;
@@ -1269,6 +1302,7 @@ body {
             line-height: 78px;
         }
     }
+
     .header__inner {
         padding-top: 163px;
         height: 100%;
@@ -1281,15 +1315,17 @@ body {
         -webkit-transform: translateZ(-5px);
         transform: translateZ(-5px);
     }
-    .header__nav{
+
+    .header__nav {
         width: 100%;
     }
 }
-@media screen and (max-width:460px){
-.header__inner{
-    background-size: 90%;
-    background-position: 210% 0%;
-}
+
+@media screen and (max-width:460px) {
+    .header__inner {
+        background-size: 90%;
+        background-position: 210% 0%;
+    }
 }
 
 // ------------------clients----------------------//
@@ -1611,7 +1647,7 @@ body {
             letter-spacing: 1px;
             margin-bottom: 47px;
 
-           
+
         }
     }
 
@@ -1630,6 +1666,7 @@ body {
             line-height: 44px;
             letter-spacing: 1px;
             max-width: 226px;
+
             &::after {
                 width: 60%;
             }
@@ -1664,11 +1701,12 @@ body {
         padding-bottom: 31px;
     }
 }
-@media  screen and (max-width:400px) {
-    .contact-info{
-       padding-left:122px;
+
+@media screen and (max-width:400px) {
+    .contact-info {
+        padding-left: 122px;
     }
-    
+
 }
 
 // ------------------contactForm----------------------//
@@ -1911,9 +1949,11 @@ body {
 
 
     }
-    &__content{
+
+    &__content {
         padding-left: 15px;
     }
+
     &__slide {
         position: relative;
 
@@ -2227,12 +2267,14 @@ body {
 
 @media screen and (max-width:577px) {
     .recentWorks {
-        &__information{
-            padding-left:20px;
-        }
-        &__slider{
+        &__information {
             padding-left: 20px;
         }
+
+        &__slider {
+            padding-left: 20px;
+        }
+
         input[type="range"] {
             width: 307px;
         }
@@ -2295,7 +2337,7 @@ body {
     }
 
     &__container {
-        width:100%;
+        width: 100%;
         padding-left: 35px;
         padding-right: 136px;
         margin: 0 auto;
@@ -2454,14 +2496,16 @@ body {
 
 @media screen and (max-width:577px) {
     .footer {
-        &__container{
+        &__container {
             padding-right: 47px;
             padding-left: 20px;
         }
+
         .logo {
             margin-right: 65px;
         }
-        &__inner{
+
+        &__inner {
             margin: 0 auto;
             justify-content: space-between !important;
             max-width: 293px;
