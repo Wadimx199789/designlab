@@ -308,6 +308,10 @@ body {
 }
 
 @media screen and (max-width: 1441px) {
+  .header .logo {
+    width: 65px;
+    height: 60px;
+  }
   .header__top-container {
     padding-right: 32px;
     padding-left: 32px;
@@ -2200,6 +2204,8 @@ body {
     padding-bottom: 46px;
   }
   .footer .logo {
+    width: 65px;
+    height: 60px;
     margin-right: 110px;
   }
   .footer__container {
@@ -2284,6 +2290,7 @@ body {
     padding-left: 20px;
   }
   .footer .logo {
+    width: 75px;
     margin-right: 65px;
   }
   .footer__inner {
