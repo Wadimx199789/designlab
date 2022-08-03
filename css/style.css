@@ -289,8 +289,8 @@ body {
           justify-content: space-between;
   margin: 0 auto;
   padding-top: 24px;
-  padding-right: 115px;
-  padding-left: 15px;
+  padding-right: 150px;
+  padding-left: 35px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1787,6 +1787,10 @@ body {
   background-color: #161515;
 }
 
+.recentWorks__content {
+  padding-left: 15px;
+}
+
 .recentWorks__slide {
   position: relative;
 }
@@ -2121,9 +2125,9 @@ body {
 }
 
 .footer__container {
-  max-width: 1385px;
-  padding-left: 15px;
-  padding-right: 132px;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 136px;
   margin: 0 auto;
 }
 
@@ -2266,11 +2270,22 @@ body {
 }
 
 @media screen and (max-width: 577px) {
+  .footer__container {
+    padding-right: 47px;
+    padding-left: 20px;
+  }
   .footer .logo {
     margin-right: 65px;
   }
+  .footer__inner {
+    margin: 0 auto;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    max-width: 293px;
+  }
   .footer__menu {
-    margin-right: 0;
+    justify-items: center;
   }
   .footer__inner {
     -webkit-box-pack: center;

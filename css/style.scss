@@ -275,8 +275,8 @@ body {
         justify-content: space-between;
         margin: 0 auto;
         padding-top: 24px;
-        padding-right: 115px;
-        padding-left: 15px;
+        padding-right: 150px;
+        padding-left: 35px;
         transition: 1s;
 
     }
@@ -1911,7 +1911,9 @@ body {
 
 
     }
-
+    &__content{
+        padding-left: 15px;
+    }
     &__slide {
         position: relative;
 
@@ -2293,9 +2295,9 @@ body {
     }
 
     &__container {
-        max-width: 1385px;
-        padding-left: 15px;
-        padding-right: 132px;
+        width:100%;
+        padding-left: 35px;
+        padding-right: 136px;
         margin: 0 auto;
     }
 
@@ -2452,13 +2454,22 @@ body {
 
 @media screen and (max-width:577px) {
     .footer {
+        &__container{
+            padding-right: 47px;
+            padding-left: 20px;
+        }
         .logo {
             margin-right: 65px;
+        }
+        &__inner{
+            margin: 0 auto;
+            justify-content: space-between !important;
+            max-width: 293px;
         }
     }
 
     .footer__menu {
-        margin-right: 0;
+        justify-items: center;
     }
 
     .footer__inner {
