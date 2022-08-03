@@ -26,6 +26,21 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+@media screen and (max-width:577px){
+    .container{
+        padding:0 20px;
+    }
+}
+@media screen and (max-width:1025px){
+    .container{
+        padding:0 24px;
+    }
+}
+@media screen and (max-width:769px){
+    .container{
+        padding:0 18px;
+    }
+}
 
 // ------------------preloader----------------------------------//
 #preloader {
@@ -328,7 +343,12 @@ body {
 }
 
 @media screen and (max-width:1025px) {
-
+    .header{
+        .logo{
+            width:60px;
+            height: 60px;
+        }
+    }
     .header__top-container {
         padding-right: 24px;
         padding-left: 24px;
@@ -485,10 +505,10 @@ body {
             &::after {
                 position: absolute;
                 content: "";
-                width: 100%;
+                width: 98%;
                 height: 1px;
                 bottom: 0;
-                left: 0;
+                left: 1%;
                 background-color: #C9C8C8;
 
             }
@@ -563,13 +583,17 @@ body {
 
         &__content {
             margin-bottom: 83px;
-            max-width: 620px;
+            max-width: 665px;
 
             h2 {
                 font-size: 40px;
                 line-height: 49px;
                 letter-spacing: 1px;
                 margin-bottom: 35px;
+                &::after{
+                    width: 90%;
+                    left:5%;
+                }
 
             }
 
@@ -597,6 +621,10 @@ body {
 }
 
 @media screen and (max-width:1025px) {
+    .lab__content h2::after {
+        width: 90%;
+        left: 5%;
+    }
     .lab {
         padding-top: 78px;
         padding-bottom: 56px;
@@ -612,6 +640,8 @@ body {
             }
 
             p {
+                max-width: 480px;
+                margin: 0 auto;
                 font-size: 18px;
                 letter-spacing: 0.3px;
             }
@@ -639,6 +669,10 @@ body {
 }
 
 @media screen and (max-width:769px) {
+    .lab__content h2::after {
+        width: 76%;
+        left: 12%;
+    }
     .lab {
         padding-top: 58px;
         padding-bottom: 31px;
@@ -692,8 +726,35 @@ body {
     .lab__bottom-item {
         width: 50% !important;
     }
+    .lab__bottom-item:nth-child(2n){
+        padding-left: 24px;
+    }
+    .lab__bottom-item:nth-child(2n+1){
+        padding-right: 24px;
+    }
 }
-
+@media  screen and (max-width:512px) {
+    .lab__content h2::after {
+        width: 82%;
+        left: 9%;
+    }
+    
+}
+@media screen and (max-width:460px){
+    .lab__content h2::after {
+        width: 88%;
+        left: 6%;
+    }
+}
+@media screen and (max-width:400px){
+    .lab__content{
+        max-width:288px;
+    }
+    .lab__content h2::after {
+        width: 52%;
+        left: 50%;
+    }
+}
 // ------------------------services----------------------//
 .services {
     &--second {
@@ -869,6 +930,10 @@ body {
 
 @media screen and (max-width:1441px) {
     .services {
+        .container{
+            padding-left: 47px;
+            padding-right: 65px;
+        }
         padding-top: 93px;
         padding-bottom: 11px;
 
@@ -937,7 +1002,10 @@ body {
     .services {
         padding-top: 43px;
         padding-bottom: 8px;
-
+        .container{
+            padding-left:39px;
+            padding-right: 19;
+        }
         &__slide-row {
             &:not(:last-child) {
                 margin-bottom: 35px;
@@ -1016,13 +1084,13 @@ body {
 
 @media screen and (max-width:769px) {
     .services {
-        &--first {
-            display: none;
+        padding-top:50px;
+        padding-bottom:15px;
+        .container{
+            padding-left:33px;
+            padding-right:33px;
         }
-
-        &--second {
-            display: block;
-        }
+      
 
         padding-top: 50px;
         padding-bottom: 15px;
@@ -1090,7 +1158,23 @@ body {
 
     }
 }
+@media screen and (max-width:577px){
+    .services{
+        &--first {
+            display: none;
+        }
+    
+        &--second {
+            display: block;
+        }
+        &__slide-item {
+            p{
+                max-width: 290px;
+            }
+        }
+    }
 
+}
 // ------------------header---------------------------//
 .header {
     overflow: hidden;
@@ -1527,9 +1611,7 @@ body {
             letter-spacing: 1px;
             margin-bottom: 47px;
 
-            &::after {
-                width: 60%;
-            }
+           
         }
     }
 
@@ -1548,6 +1630,9 @@ body {
             line-height: 44px;
             letter-spacing: 1px;
             max-width: 226px;
+            &::after {
+                width: 60%;
+            }
         }
     }
 
@@ -1578,6 +1663,12 @@ body {
         padding-top: 60px;
         padding-bottom: 31px;
     }
+}
+@media  screen and (max-width:400px) {
+    .contact-info{
+       padding-left:122px;
+    }
+    
 }
 
 // ------------------contactForm----------------------//
@@ -2033,6 +2124,7 @@ body {
         }
 
         &__information {
+            padding-left: 24px;
             padding-top: 20px;
         }
 
@@ -2087,6 +2179,7 @@ body {
         }
 
         &__information {
+            padding-left: 18px;
             padding-top: 0px;
         }
 
@@ -2132,16 +2225,18 @@ body {
 
 @media screen and (max-width:577px) {
     .recentWorks {
+        &__information{
+            padding-left:20px;
+        }
+        &__slider{
+            padding-left: 20px;
+        }
         input[type="range"] {
             width: 307px;
         }
 
         &__inner {
             flex-wrap: wrap;
-        }
-
-        &__slider {
-            padding-left: 35px;
         }
 
         &__slide {
@@ -2300,8 +2395,8 @@ body {
     }
 
     .footer__container {
-        padding-right: 24px;
-        padding-left: 43px;
+        padding-right: 43px;
+        padding-left: 24px;
     }
 
     .footer__inner {
@@ -2328,8 +2423,8 @@ body {
         padding-bottom: 24px;
 
         &__container {
-            padding-right: 18px;
-            padding-left: 37px;
+            padding-right: 37px;
+            padding-left: 18px;
         }
 
         &__menu {
