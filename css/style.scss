@@ -2066,7 +2066,7 @@ body {
         display: block;
         background-color: #700DC0;
         display: block;
-        width: 582px;
+        width: 600px;
         -webkit-appearance: none;
         border-radius: 5px;
         outline: 0;
@@ -2339,13 +2339,13 @@ body {
     background: #161515;
 
     .logo {
-        margin-right: 145px;
+        margin-right: 142px;
     }
 
     &__container {
         width: 100%;
         padding-left: 35px;
-        padding-right: 136px;
+        padding-right: 177px;
         margin: 0 auto;
     }
 
@@ -2533,5 +2533,43 @@ body {
     .footer__inner{
         margin-left:0;
         margin-right: auto;
+    }
+}
+
+.footer__box{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1367px){
+    .footer__box {
+        max-width: 1168px;
+    }
+    .footer__container {
+        padding-left: 35px;
+        padding-right: 114px;
+    }
+}
+@media screen and (max-width:1025px) {
+    .footer__container {
+        padding-right: 43px;
+        padding-left: 24px;
+    }
+}
+@media screen and (max-width:769px){
+    .footer{
+        &__container{
+            &__container {
+                padding-right: 37px;
+                padding-left: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width:577px){
+    .footer {
+        &__container {
+            padding-right: 47px;
+            padding-left: 20px;
+        }
     }
 }
