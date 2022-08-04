@@ -2309,4 +2309,11 @@ body {
             justify-content: center;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .footer__inner {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
