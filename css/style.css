@@ -71,6 +71,27 @@ body {
   height: 160px;
 }
 
+@media screen and (max-width: 1441px) {
+  #loader {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #loader {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #loader {
+    width: 78px;
+    height: 78px;
+  }
+}
+
 .line-scale-pulse-out > div {
   background-color: #700DC0;
   width: 4px;
