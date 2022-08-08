@@ -153,10 +153,12 @@ body {
 
 .header__call .header__call-svg path {
   fill: #ffffff;
+  stroke: #ffffff;
 }
 
 .header__call.dark .header__call-svg path {
   fill: #000000;
+  stroke: #000000;
 }
 
 .header .logo {
@@ -930,6 +932,10 @@ body {
   line-height: 37px;
   color: #700DC0;
   margin-right: 15px;
+}
+
+.services__slide-img {
+  width: 65px;
 }
 
 .services__slide-content p {
@@ -2253,6 +2259,7 @@ body {
 }
 
 .footer__accounts p {
+  margin-bottom: 0;
   padding: 0;
 }
 

@@ -160,6 +160,7 @@ body {
     .header__call-svg{
         path{
             fill: #ffffff;
+            stroke:#ffffff
         }
     }
 }
@@ -168,6 +169,7 @@ body {
     .header__call-svg{
         path{
             fill: #000000;
+            stroke:#000000;
         }
     }
 }
@@ -1022,6 +1024,9 @@ body {
 
         ;
     }
+}
+.services__slide-img{
+    width: 65px;
 }
 
 .services__slide-content p {
@@ -2480,6 +2485,7 @@ body {
         color: #FFFFFF;
 
         p {
+            margin-bottom: 0;
             padding: 0;
         }
     }
