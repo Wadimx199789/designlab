@@ -464,7 +464,7 @@ fieldset {
 }
 
 .col-twelve,
-.col-full {
+.col-row {
     width: 100%;
 }
 
