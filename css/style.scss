@@ -157,8 +157,40 @@ body {
 // ------------------------header-------------------------------//
 .header__call {
     cursor: pointer;
+    .header__call-svg{
+        path{
+            fill: #ffffff;
+        }
+    }
 }
 
+.header__call.dark{
+    .header__call-svg{
+        path{
+            fill: #000000;
+        }
+    }
+}
+
+.header{
+    .logo{
+        width: 80px;
+    }
+    .logo{
+        &__svg{
+         g{
+             fill: #ffffff;
+         }
+        }
+     }
+    .logo.dark{
+       .logo__svg{
+        g{
+            fill: #000000;
+        }
+       }
+    }
+}
 .header__burger {
     padding-top: 2px;
     opacity: 1;
@@ -290,6 +322,15 @@ body {
         background: #ffffff;
     }
 }
+.header__burger.dark{
+    span{
+        background:#000000;
+    }
+
+    &::before,&::after{
+        background-color: #000000;
+    }
+}
 
 .header__top {
     position: absolute;
@@ -320,14 +361,14 @@ body {
     position: static;
 }
 
-.header__top-container.active {
-    z-index: 1000;
-    background: #000000;
-    opacity: .9;
-    padding-top: 10px;
-    padding-bottom: 10px;
+// .header__top-container.active {
+//     z-index: 1000;
+//     background: #000000;
+//     opacity: .9;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
 
-}
+// }
 
 @media screen and (max-width:1441px) {
     .header {
@@ -2434,7 +2475,7 @@ body {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 24px;
         color: #FFFFFF;
 
@@ -2505,7 +2546,7 @@ body {
             // margin-right: 50px;
             max-width: 356px;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 24px;
         }
     }

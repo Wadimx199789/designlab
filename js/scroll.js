@@ -1,7 +1,6 @@
 const headerTopContainer = document.querySelector(".header__top-container");
 const labDesignBlock = document.querySelector(".lab");
 const footerMenuLinks = document.querySelectorAll(".footer__menu-link");
-
 const burger = document.querySelector(".header__burger");
 const closeMenuButton = document.querySelector(".header__nav-close");
 const headerNav = document.querySelector(".header__nav");
@@ -9,6 +8,8 @@ const headerTop = document.querySelector(".header__top-container");
 const headerCloseBtn = document.querySelector(".header__nav-close");
 const headerLinks = document.querySelectorAll(".header__nav-link");
 const headerCall = document.querySelector(".header__call");
+const headerLogo = document.querySelector(".logo");
+const recentWorks = document.querySelector(".recentWorks");
 
 
 function getCoords(block) {
@@ -22,11 +23,15 @@ function getCoords(block) {
 
 window.onscroll = function() {
     // We add pageYOffset for compatibility with IE.
-    if (getCoords( headerTopContainer).top > getCoords(labDesignBlock).top ) {
-        headerTopContainer.classList.add("active");
+    if (getCoords( headerTopContainer).top > getCoords(labDesignBlock).top && getCoords(recentWorks).top > getCoords( headerTopContainer).top) {
+        headerLogo.classList.add("dark");
+        headerCall.classList.add("dark");
+        burger.classList.add("dark")
 
     } else {
-        headerTopContainer.classList.remove("active");
+        headerLogo.classList.remove("dark");
+        headerCall.classList.remove("dark");
+        burger.classList.remove("dark");
 
     }
 

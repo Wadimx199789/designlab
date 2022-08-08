@@ -151,6 +151,26 @@ body {
   cursor: pointer;
 }
 
+.header__call .header__call-svg path {
+  fill: #ffffff;
+}
+
+.header__call.dark .header__call-svg path {
+  fill: #000000;
+}
+
+.header .logo {
+  width: 80px;
+}
+
+.header .logo__svg g {
+  fill: #ffffff;
+}
+
+.header .logo.dark .logo__svg g {
+  fill: #000000;
+}
+
 .header__burger {
   padding-top: 2px;
   opacity: 1;
@@ -297,6 +317,14 @@ body {
   background: #ffffff;
 }
 
+.header__burger.dark span {
+  background: #000000;
+}
+
+.header__burger.dark::before, .header__burger.dark::after {
+  background-color: #000000;
+}
+
 .header__top {
   position: absolute;
   width: 100%;
@@ -330,14 +358,6 @@ body {
 
 .header__top-container.top {
   position: static;
-}
-
-.header__top-container.active {
-  z-index: 1000;
-  background: #000000;
-  opacity: .9;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1441px) {
@@ -2227,7 +2247,7 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 24px;
   color: #FFFFFF;
 }
@@ -2290,7 +2310,7 @@ body {
   .footer__accounts {
     max-width: 356px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
   }
   .footer__logo.first {
