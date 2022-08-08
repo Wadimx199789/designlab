@@ -10,6 +10,7 @@ const headerLinks = document.querySelectorAll(".header__nav-link");
 const headerCall = document.querySelector(".header__call");
 const headerLogo = document.querySelector(".logo");
 const recentWorks = document.querySelector(".recentWorks");
+const contact = document.querySelector(".contact")
 
 
 function getCoords(block) {
@@ -26,7 +27,7 @@ window.onscroll = function() {
     if (getCoords( headerTopContainer).top > getCoords(labDesignBlock).top && getCoords(recentWorks).top > getCoords( headerTopContainer).top) {
         headerLogo.classList.add("dark");
         headerCall.classList.add("dark");
-        burger.classList.add("dark")
+        burger.classList.add("dark");
 
     } else {
         headerLogo.classList.remove("dark");
@@ -34,6 +35,13 @@ window.onscroll = function() {
         burger.classList.remove("dark");
 
     }
+    if(getCoords(headerLogo).top> getCoords(contact).top){
+        headerLogo.classList.add("zero");
+    }
+   else{
+        headerLogo.classList.remove("zero");
+    }
+   
 
     getCoords( headerTopContainer).top
 };

@@ -176,6 +176,9 @@ body {
 
 .header{
     .logo{
+        transition: .5s;
+        opacity: 1;
+        
         width: 80px;
     }
     .logo{
@@ -191,6 +194,9 @@ body {
             fill: #000000;
         }
        }
+    }
+    .logo.zero{
+        opacity: 0;
     }
 }
 .header__burger {
